@@ -25,6 +25,7 @@ interface DashboardStats {
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884d8', '#82ca9d'];
 
 export function Dashboard() {
+  const user = JSON.parse(localStorage.getItem('user') || '{}');
   const navigate = useNavigate();
   const [stats, setStats] = useState<DashboardStats>({
     totalRegistrations: 0,
