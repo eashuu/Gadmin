@@ -8,7 +8,7 @@ export const Login = () => {
   useEffect(() => {
     function start() {
       gapi.client.init({
-        clientId: 'YOUR_GOOGLE_CLIENT_ID',
+        clientId: '818907771783-cnuqqmsjtfkuhk4dpujrgej5a5cgc7ji.apps.googleusercontent.com',
         scope: 'email',
       });
     }
